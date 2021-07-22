@@ -13,7 +13,7 @@ MSBuild.exe /t:Restore,Rebuild .\AspNetCoreMvc5.sln
 C:\SonarQube\scanner-dotnet-5.2.2\SonarScanner.MSBuild.exe end /d:sonar.login="..."
 ```
 
-The 2 issues (AspNetCoreMvc5\Program.cs(12,18): warning S1118 and AspNetCoreMvc5\Controllers\HomeController.cs(14,50): warning S4487 ) appear on the C# files, however there are no metrics and no highlighting for the C# code - only for the JS code.
+The 2 issues (`AspNetCoreMvc5\Program.cs(12,18): warning S1118` and `AspNetCoreMvc5\Controllers\HomeController.cs(14,50): warning S4487` ) appear on the C# files, however there are no metrics and no highlighting for the C# code - the existing metrics are only for the JS code.
 
-Actual: no metrics, no highlighting for C# code. 
-Expected: metrics and highlighting for C# code.
+- Actual: no metrics, no highlighting for C# code. 
+- Expected: metrics and highlighting for C# code.
